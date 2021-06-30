@@ -1,0 +1,12 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+libdir=@CMAKE_INSTALL_PREFIX@/lib
+includedir=@CMAKE_INSTALL_PREFIX@/include
+
+Name: uvgRTP
+Description: Open-source library for RTP/SRTP media transport
+URL: https://github.com/ultravideo/uvgRTP
+Version: 2.0.0
+CFlags: -I${includedir} @CRYPTOPP_INCLUDE_DIRS@
+Libs: -L${libdir} -luvgrtp -lpthread @CRYPTOPP_LDFLAGS@
+Requires:
+
